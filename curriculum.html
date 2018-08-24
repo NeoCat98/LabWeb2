@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Curriculum vitae</title>
+</head>
+<body>
+    <form action="" method="POST">
+    <h1>Curriculum vitae</h1>
+        <section>
+            <fieldset>
+                <legend>Personal Data</legend>
+                <label for="dui">DUI</label>
+                <input id= "dui" type="text" name = "dui" placeholder="04813412-8" required pattern="[0-9]{8}-[0-9]{1}" title="ingrese su DUI con el siguiente formato 01234567-8">
+                <label for="firstName">First name</label>
+                <input id= "firstName" type="text" name = "firstName" placeholder="First Name" required>
+                <label for="LastName">Last name</label>
+                <input id= "LastName" type="text" name = "LastName" placeholder="lastName" required>
+                <label for="Gender">Gender</label>
+                <input type="radio" name="genero" id="masculino" value = "M" required>
+                <label for="masculino">M</label>
+                <input type="radio" name="genero" id="femenino" value = "F" required>
+                <label for="femenino">F</label><br>
+                <label for="number">Contact Number: </label>
+                <input type="tel" required>
+                <label for="birthday">Birthday:</label>
+                <input type="date" name="birthday" id="birthday" required>
+                <label for="civil">Civil Status</label>
+                <select name="civil" id="civil" required>
+                    <option value="single">Single</option>
+                    <option value="married">Married</option>
+                    <option value="widowed">Widowed</option>
+                    <option value="separated">Separated</option>
+                    <option value="divorced">Divorced</option>
+                </select>
+                <label for="image">Image</label>
+                <input type="file" name="image" id="image" >
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Work Experience</legend>
+                <textarea name="workExperience" cols="30" rows="10" placeholder="Experience" required></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Academic Training</legend>
+                <textarea name="acadenicTraining" cols="30" rows="10" placeholder="Academic Training" required></textarea>
+            </fieldset>
+        </section>
+        <section>
+            <fieldset>
+                <legend>Further Training</legend>
+                <fieldset>
+                    <legend>Programming Languages</legend>
+                    <input type="checkbox" name="java" id="java">
+                    <label for="java">Java</label>
+                    <input type="checkbox" name="C#" id="C#">
+                    <label for="C#">C#</label>
+                    <input type="checkbox" name="Phyton" id="Phyton">
+                    <label for="Phyton">Phyton</label>
+                    <input type="checkbox" name="C++" id="C++">
+                    <label for="C++">C++</label>
+                    <input type="checkbox" name="Ruby" id="Ruby">
+                    <label for="Ruby">Ruby</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Web Technologies</legend>
+                    <input type="checkbox" name="HTML5" id="HTML5">
+                    <label for="HTML5">HTML5</label>
+                    <input type="checkbox" name="CSS/CSS3" id="CSS/CSS3">
+                    <label for="CSS/CSS3">CSS/CSS3</label>
+                    <input type="checkbox" name="materialize Css" id="materialize Css">
+                    <label for="materialize Css">Materialize Css</label>
+                    <input type="checkbox" name="Javascript" id="Javascript">
+                    <label for="Javascript">Javascript</label>
+                    <input type="checkbox" name="node" id="node">
+                    <label for="node">Node.js</label>
+                    <input type="checkbox" name="Spring MVC" id="Spring MVC">
+                    <label for="Spring MVC">Spring MVC</label>
+                </fieldset>
+            </fieldset>
+        </section>
+        <button type="submit">Send</button>
+        <button>Cancel</button>
+    </form>
+</body>
+</html>
